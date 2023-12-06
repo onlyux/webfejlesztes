@@ -3,7 +3,7 @@ IT beadandó
 
 Oldal készítője: Róth Rajmund Erik
 
-URL cím: 
+URL cím: https://onlyux.github.io/webfejlesztes/
 
 Téma: Egy animációs sorozatoról írtam, amely kizárólag a Netflixen jelent meg. A League of Legends nevű videójáték alapján készült.
 
