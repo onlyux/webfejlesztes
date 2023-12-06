@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Róth Rajmund">
+    <meta name="description" content="Az Arcane c. sorozatnak készült rajongói oldala">
+    <title>Kritika - Arcane</title>
+    <link href="képek/arcane_logo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/jquery.validate.js"></script>
+    <script src="javascript/myscript.js"></script>
+    
+    <style>
+        label.error {
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://arcane.com/hu-hu/" target="_blank">
+            <h1>ARCANE</h1>
+        </a>
+        <p class="copyright">Ez nem a sorozat hivatalos weboldala. Ez az oldal csak oktatási célra lett létrehozva.<br>©
+            2021 Riot Games, Inc. Az ARCANE LEAGUE OF LEGENDS és bármely kapcsolódó embléma a Riot Games, Inc. védjegye,
+            szolgáltatási neve és/vagy bejegyzett védjegye.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index">FŐOLDAL</a></li>
+            <li><a href="epizódok.html">EPIZÓDOK</a></li>
+            <li><a href="karakterek.html">KARAKTEREK</a></li>
+            <li><a href="quiz.html">QUIZ</a></li>
+            <li><a href="kritika.html" id="aktiv">KRITIKA</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form class="kritika" method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="kritika_form" novalidate>
+            <p>ÉRTÉKELD AZ ELSŐ ÉVAD RÉSZEIT! A CSÚSZKA 1-TŐL (LEGROSSZABB) 5-IG (LEGJOBB) ÁLLÍTHATÓ.</p>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;X</td>
+                </tr>
+                <tr>
+                    <td>ELSŐ RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="elso_skala"></td>
+                </tr>
+                <tr>
+                    <td>MÁSODIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="masodik_skala"></td>
+                </tr>
+                <tr>
+                    <td>HARMADIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="harmadik_skala"></td>
+                </tr>
+                <tr>
+                    <td>NEGYEDIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="negyedik_skala"></td>
+                </tr>
+                <tr>
+                    <td>ÖTÖDIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="otodik_skala"></td>
+                </tr>
+                <tr>
+                    <td>HATODIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="hatodik_skala"></td>
+                </tr>
+                <tr>
+                    <td>HETEDIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="hetedik_skala"></td>
+                </tr>
+                <tr>
+                    <td>NYOLCADIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="nyolcadik_skala"></td>
+                </tr>
+                <tr>
+                    <td>KILENCEDIK RÉSZ:</td>
+                    <td><input type="range" min="1" max="6" value="6" name="kilencedik_skala"></td>
+                </tr>
+
+            </table>
+
+            <p>HA EGY DOLGOT KIEMELNÉL A SOROZATBÓL, MI LENNE AZ?</p>
+            <input type="text" name="kiemeles" placeholder="pl.: Az animáció minősége." size="50">
+
+            <p>KI A KEDVENC FŐSZEREPLŐD? ÉS MIÉRT Ő?</p>
+            <select name="kedvenc_karakter" id="kk">
+                <option value="" selected></option>
+                <option value="vi">Vi</option>
+                <option value="jinx">Jinx</option>
+                <option value="mel">Mel</option>
+                <option value="jayce">Jayce</option>
+                <option value="viktor">Viktor</option>
+                <option value="caitlyn">Caitlyn</option>
+                <option value="vander">Vander</option>
+                <option value="silco">Silco</option>
+            </select><br><br>
+            <textarea name="kedvenc_karakter_miert" cols="50" rows="5"></textarea>
+
+            <p>AJÁNLANÁD AZ ARCANE-T AZ ISMERŐSEDINEK?</p>
+
+            
+            <label for="igen1">IGEN, MÁR AJÁNLOTTAM IS. </label>
+            <input type="radio" name="ajanlas" id="igen1" value="igen_ajanlas"><br>
+
+            
+            <label for="igen2">IGEN, DE MÉG NEM AJÁNLOTTAM SENKINEK. </label>
+            <input type="radio" name="ajanlas" id="igen2" value="igen_nincs_ajanlas"><br>
+
+            
+            <label for="nem">NEM. </label>
+            <input type="radio" name="ajanlas" id="nem" value="nem"><br><br>
+
+            <input type="submit" class="formgomb" value="Elküldöm!">
+            <input type="reset" class="formgomb" value="Alaphelyzet">
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright">Ez nem a sorozat hivatalos weboldala. Ez az oldal csak oktatási célra lett létrehozva.<br>©
+            2021 Riot Games, Inc. Az ARCANE LEAGUE OF LEGENDS és bármely kapcsolódó embléma a Riot Games, Inc. védjegye,
+            szolgáltatási neve és/vagy bejegyzett védjegye.</p>
+    </footer>
+
+</body>
+
+</html>

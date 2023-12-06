@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Róth Rajmund">
+    <meta name="description" content="Az Arcane c. sorozatnak készült rajongói oldala">
+    <title>Quiz - Arcane</title>
+    <link href="képek/arcane_logo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/myscript.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://arcane.com/hu-hu/" target="_blank">
+            <h1>ARCANE</h1>
+        </a>
+        <p class="copyright">Ez nem a sorozat hivatalos weboldala. Ez az oldal csak oktatási célra lett létrehozva.<br>©
+            2021 Riot Games, Inc. Az ARCANE LEAGUE OF LEGENDS és bármely kapcsolódó embléma a Riot Games, Inc. védjegye,
+            szolgáltatási neve és/vagy bejegyzett védjegye.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index">FŐOLDAL</a></li>
+            <li><a href="epizódok.html">EPIZÓDOK</a></li>
+            <li><a href="karakterek.html">KARAKTEREK</a></li>
+            <li><a href="quiz.html" id="aktiv">QUIZ</a></li>
+            <li><a href="kritika.html">KRITIKA</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form action="#" name="quiz_form">
+            <p class="tajekoztato">TESZTELD TUDÁSODAT A SOROZATTAL KAPCSOLATBAN! TÖLTSD KI A TESZTET, MAJD TEKINTSD MEG
+                A PONTSZÁMODAT!</p>
+            <p>1. MELYIK EGYÜTTES KÉSZÍTETTE A SOROZAT FŐCÍMDALÁT?</p>
+
+            <input type="radio" name="banda" id="acdc" value="ac_dc">
+            <label for="acdc">AC/DC</label><br>
+
+            <input type="radio" name="banda" id="i_d" value="imaginedragons">
+            <label for="i_d">IMAGINE DRAGONS</label><br>
+
+            <input type="radio" name="banda" id="t_p" value="twentyonepilots">
+            <label for="t_p">TWENTY ONE PILOTS</label><br>
+
+            <input type="radio" name="banda" id="a_m" value="arcticmonkeys">
+            <label for="a_m">ARCTIC MONKEYS</label><br>
+
+            <p>2. MELYIK TERÜLET LÁTHATÓ A KÉPEN?</p>
+            <img src="képek/piltover.jpg" alt="Kép egy városról."><br><br>
+
+            <input type="radio" name="varos" id="nox" value="noxus">
+            <label for="nox">NOXUS</label><br>
+
+            <input type="radio" name="varos" id="dem" value="demacia">
+            <label for="dem">DEMACIA</label><br>
+
+            <input type="radio" name="varos" id="za" value="zaun">
+            <label for="za">ZAUN</label><br>
+
+            <input type="radio" name="varos" id="pi" value="piltover">
+            <label for="pi">PILTOVER</label><br>
+
+            <p>3. MIKOR JELENT MEG A SOROZAT?</p>
+            <input type="date" name="megjelenes" id="datum">
+
+            <p>4. HÁNY ÉVES HEIMERDINGER?</p>
+            <input type="number" name="heimer_kor" id="heimerdinger_kor">
+
+            <p>5. HOGY HÍVJÁK PILTOVER BÖRTÖNÉT?</p>
+            <input type="radio" name="borton" id="st" value="stillwater">
+            <label for="st">STILLWATER HOLD</label><br>
+
+            <input type="radio" name="borton" id="fr" value="freljord">
+            <label for="fr">FRELJORD PRISON</label><br>
+
+            <input type="radio" name="borton" id="bi" value="bilgewater">
+            <label for="bi">BILGEWATER HOLD</label><br>
+
+            <input type="radio" name="borton" id="pp" value="piltover_prison">
+            <label for="pp">PILTOVER'S PRISON</label><br><br>
+
+            <input type="button" onClick="quiz()" name="elküld" class="formgomb" value="KÉSZ!">
+
+        </form>
+        <p id="quiz_eredmeny">ITT FOG MEGJELENNI AZ EREDMÉNYED!</p>
+    </div>
+
+    <footer>
+        <p class="copyright">Ez nem a sorozat hivatalos weboldala. Ez az oldal csak oktatási célra lett létrehozva.<br>©
+            2021 Riot Games, Inc. Az ARCANE LEAGUE OF LEGENDS és bármely kapcsolódó embléma a Riot Games, Inc. védjegye,
+            szolgáltatási neve és/vagy bejegyzett védjegye.</p>
+    </footer>
+
+</body>
+
+</html>
